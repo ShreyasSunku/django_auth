@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<p>
+
+    {% if user.is_authenticated %}
+    <strong> {{user.username}}</strong>
+    {% else %}
+        Login Now
+    {% endif %}
+</p>
+
+<!--{{count}}-->
+
+{% endblock %}
